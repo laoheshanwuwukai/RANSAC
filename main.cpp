@@ -1,4 +1,3 @@
-
 #include "lineParameterEstimator.h"
 #include "RANSAC.h"
 #include "Point2D.h"
@@ -79,7 +78,7 @@ int  main(int argc, char* argv[])
 
   clock_t startTime = clock();
 
-	              //A RANSAC estimate of the line parameters
+    //A RANSAC estimate of the line parameters
   double usedData = RANSAC<Point2D,double>::compute(lineParameters, 
 		                                                 &lpEstimator , 
 											  	                           pointData,
