@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.10)
 project(RANSAC)
 
 include_directories(
-    include
+    ${PROJECT_SOURCE_DIR}/include
 )
 
 add_executable(
