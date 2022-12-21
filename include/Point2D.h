@@ -16,7 +16,7 @@ class Point2D
 public:
     Point2D(double px , double py) : _x(px) , _y(py){}
 
-    ~Point2D();
+    //~Point2D();
 
     double _x , _y;
 };
