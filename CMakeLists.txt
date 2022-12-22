@@ -6,11 +6,21 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include
 )
 
-add_executable(
-    RANSAC
+set(RANSAC_EXAMPLE_HDRS
+    include/lineParameterEstimator.h
+    include/ParameterEstimator.h
+    include/Point2D.h
+    include/RANSAC.h)
+    
+set(RANSAC_EXAMPLE_SRCS
     main.cpp
     src/lineParameterEstimator.cpp
-    src/RANSAC.cpp
+    src/RANSAC.cpp)
+
+add_executable(
+    RANSAC
+    ${RANSAC_EXAMPLE_HDRS}
+    ${RANSAC_EXAMPLE_SRCS}
 )
 
 
